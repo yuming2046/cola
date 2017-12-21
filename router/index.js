@@ -1,12 +1,10 @@
 import Router from "koa-router"
+import userController from '../../'
 
 let router = new Router()
 
 router
-	.get('/', function (ctx, next) {
-		console.log("####")
-		ctx.body = 'Hello World!';
-	})
+	.get('/', userController)
 	.get('/users', (ctx, next) => {
 		console.log(ctx)
 		ctx.body = ctx;
