@@ -1,12 +1,12 @@
 import Router from "koa-router"
 
-const userRouter = new Router()
+const router = new Router()
 
-userRouter.prefix('/user')
+router.prefix('/user')
 
-userRouter
+router
     .get('/list', (ctx, next) => {
-
+        ctx.body = "Hello World"
     })
     .post('/add', (ctx, next) => {
 
@@ -18,4 +18,4 @@ userRouter
 
     })
 
-export default userRouter
+export default router
