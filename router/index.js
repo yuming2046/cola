@@ -4,6 +4,6 @@ console.log(userRouter)
 
 const router = new Router()
 
-router.use(userRouter)
+router.use(userRouter.routes())
 
 export default router

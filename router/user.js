@@ -17,3 +17,5 @@ userRouter
     .del('/delete', (ctx, next) => {
 
     })
+
+export default userRouter
