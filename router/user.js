@@ -1,16 +1,19 @@
 import Router from "koa-router"
+const router = new Router()
 
-const userRouter = new Router()
-console.log(userRouter)
-console.log("user")
+router
+    .get('/list', (ctx, next) => {
+        console.log("======>>>>>>>>")
+        ctx.body = "Hello World"
+    })
+    .post('/add', (ctx, next) => {
 
-userRouter.prefix('/user')
+    })
+    .put('/update', (ctx, next) => {
 
-userRouter.get('/list', (ctx, next) => {
-    ctx.body = 'helle user list'
-})
-userRouter.post('/add', (ctx, next) => {})
-userRouter.put('/update', (ctx, next) => {})
-userRouter.del('/delete', (ctx, next) => {})
+    })
+    .del('/delete', (ctx, next) => {
 
-export default userRouter
+    })
+
+export default router
