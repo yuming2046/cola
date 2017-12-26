@@ -1,5 +1,6 @@
 import Koa from 'koa'
-import {router} from './config'
+import router from './router'
+console.log(router)
 
 const app = new Koa();
 
