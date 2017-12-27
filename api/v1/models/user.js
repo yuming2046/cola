@@ -1,5 +1,11 @@
-class UserModel {
+'use strict'
 
-}
+import mongoose from 'mongoose'
+const Schema = mongoose.Schema
 
-export default UserModel
+const UserSchema = new Schema({
+    nickName: String,
+    avatar: String
+})
+
+const User = mongoose.model('User', UserSchema)

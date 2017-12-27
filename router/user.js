@@ -3,8 +3,6 @@ const router = new Router()
 
 import UserController from '../api/v1/controllers/userController'
 
-console.log(UserController.list)
-
 router
     .get('/list', UserController.list)
     .post('/add', UserController.add)
