@@ -1,3 +1,3 @@
-import router from '../router/index'
+module.exports = {
 
-export {router}
+}

@@ -4,9 +4,10 @@ const router = new Router()
 import ArticleController from '../api/v1/controllers/articleController'
 
 router
-    .get('/list', ArticleController.list)
-    .post('/add', ArticleController.add)
-    .put('/update', ArticleController.update)
-    .del('/delete', ArticleController.del)
+    .get('/', ArticleController.list)
+    .get('/:articleId', ArticleController.list)
+    .post('/', ArticleController.add)
+    .put('/:articleId', ArticleController.update)
+    .del('/:articleId', ArticleController.del)
 
 export default router
