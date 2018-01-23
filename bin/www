@@ -4,18 +4,28 @@
  * Module dependencies.
  */
 
-var config = require('../config');
+import app from '../index';
+// var debug = require('debug')(config.session_secret+':server');
+import http from 'http';
+const logger = require('../util/log')('app');
 
-var app = require('../app');
-var debug = require('debug')(config.session_secret+':server');
-var http = require('http');
+/**
+ * make log directoryfcon
+ */
+try {
+  require('fs').mkdirSync('./logs')
+} catch(e) {
+  if (e.code != 'EEXIST') {
+    console.error("Could not set up log directory, error was: ", e)
+    process.exit(1)
+  }
+}
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(config.port || '3000');
-// var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 
