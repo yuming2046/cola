@@ -2,7 +2,7 @@ import UserModel from '../models/user'
 
 class UserService {
     static async list(ctx, next) {
-        ctx.body = "Hello World!!!"
+        ctx.body = "Hello User!!!"
     }
 
     static async add(ctx, next) {

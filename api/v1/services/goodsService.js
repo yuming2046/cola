@@ -1,10 +1,10 @@
 'use strict';
 
-import ArticleModel from '../models/article'
+import GoodsModel from '../models/goods'
 
-class ArticleService {
+class GoodsService {
     static async list(ctx, next) {
-        ctx.body = "Hello Article"
+        ctx.body = "Hello Goods!!!"
     }
 
     static async add(ctx, next) {
@@ -20,4 +20,4 @@ class ArticleService {
     }
 }
 
-export default ArticleService
+export default GoodsService
