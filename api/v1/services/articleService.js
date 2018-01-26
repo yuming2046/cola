@@ -4,7 +4,6 @@ const logger = require('../../../util/log')('ArticleService');
 
 class ArticleService {
     static async list(ctx, next) {
-        console.log(ctx)
         logger.info('Hello Article List: ' + JSON.stringify(ctx))
         ctx.body = "Hello Article"
     }
