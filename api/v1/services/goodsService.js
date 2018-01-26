@@ -1,6 +1,6 @@
 'use strict';
-
 import GoodsModel from '../models/goods'
+const logger = require('../../../util/log')('GoodsService');
 
 class GoodsService {
     static async list(ctx, next) {

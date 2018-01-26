@@ -1,6 +1,6 @@
 'use strict';
-
 import CouponModel from '../models/coupon'
+const logger = require('../../../util/log')('CouponService');
 
 class CouponService {
     static async list(ctx, next) {

@@ -1,4 +1,6 @@
+'use strict';
 import UserModel from '../models/user'
+const logger = require('../../../util/log')('UserService');
 
 class UserService {
     static async list(ctx, next) {
