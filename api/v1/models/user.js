@@ -1,11 +1,14 @@
-'use strict'
+'use strict';
 
 import mongoose from 'mongoose'
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    nickName: String,
-    avatar: String
-})
+    userName: { type: String, required: true },
+    nickName: { type: String, required: true },
+    password: {type: String, required: true },
+    avatar: { type: String, required: false },
+    createdTime: { type: Date, default: Date.now }
+});
 
-const User = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('User', UserSchema);

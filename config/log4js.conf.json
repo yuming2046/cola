@@ -1,0 +1,10 @@
+{
+  "appenders": {
+    "out": { "type": "stdout" },
+    "app": { "type": "file", "filename": "logs/app.log" },
+    "db": { "type": "file", "filename": "logs/db.log" }
+  },
+  "categories": {
+    "default": { "appenders": [ "out", "app", "db" ], "level": "debug" }
+  }
+}

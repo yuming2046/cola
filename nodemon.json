@@ -6,7 +6,8 @@
 	],
 	"verbose": true,
 	"execMap": {
-		"js": "babel-node"
+		"js": "babel-node",
+		"": "babel-node"
 	},
 	"events": {
 		"restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"

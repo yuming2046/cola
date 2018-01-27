@@ -1,0 +1,4 @@
+[2018-01-26T15:58:44.554] [INFO] app - Hello Article
+[2018-01-26T15:59:50.546] [INFO] Article - Hello Article
+[2018-01-26T16:01:41.031] [INFO] ArticleService - Hello Article
+[2018-01-26T16:04:00.534] [INFO] ArticleService - Hello Article List: {"request":{"method":"GET","url":"/api/v1/article","header":{"host":"192.168.35.45:3000","connection":"keep-alive","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"zh-CN,zh;q=0.9,en;q=0.8"}},"response":{"status":404,"message":"Not Found","header":{}},"app":{"subdomainOffset":2,"proxy":false,"env":"development"},"originalUrl":"/api/v1/article","req":"<original node req>","res":"<original node res>","socket":"<original node socket>"}

@@ -3,7 +3,7 @@
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
+const CouponSchema = new Schema({
     title: {
         type: String,
         required: true
@@ -13,4 +13,4 @@ const UserSchema = new Schema({
     createTime: {type: Date, default: Date.now()}
 });
 
-module.exports = mongoose.model('Article', UserSchema);
+module.exports = mongoose.model('Coupon', CouponSchema);

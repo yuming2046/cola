@@ -1,10 +1,10 @@
 'use strict';
-import UserModel from '../models/user'
-const logger = require('../../../util/log')('UserService');
+import GoodsModel from '../models/goods'
+const logger = require('../../../util/log')('GoodsService');
 
-class UserService {
+class GoodsService {
     static async list(ctx, next) {
-        ctx.body = "Hello User!!!"
+        ctx.body = "Hello Goods!!!"
     }
 
     static async add(ctx, next) {
@@ -20,4 +20,4 @@ class UserService {
     }
 }
 
-export default UserService
+export default GoodsService
